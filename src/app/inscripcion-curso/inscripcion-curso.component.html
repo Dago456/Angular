@@ -1,0 +1,26 @@
+<div class="inscripcion-curso-container">
+    <h2>Inscripción en Curso</h2>
+    <form>
+        <div class="form-group">
+            <label for="nombreCurso">Nombre del Curso:</label>
+            <input type="text" id="nombreCurso" name="nombreCurso" class="form-control" [(ngModel)]="nombreCurso">
+        </div>
+        <div class="form-group">
+            <label for="nivel">Nivel:</label>
+            <select id="nivel" name="nivel" class="form-control" [(ngModel)]="nivel">
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" class="form-control" [(ngModel)]="fechaInicio">
+        </div>
+        <div class="form-group">
+            <label for="duracion">Duración (en semanas):</label>
+            <input type="number" id="duracion" name="duracion" class="form-control" [(ngModel)]="duracion">
+        </div>
+        <button (click)="inscribirse()" class="btn-submit">Inscribirse</button>
+    </form>
+</div>

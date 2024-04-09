@@ -1,0 +1,23 @@
+<div class="background">
+    <div *ngFor="let item of gridItems" class="grid-item"></div>
+
+<div class="login-container">
+    <h1 class="login-title">Login</h1>
+    
+    <form class="login-form">
+        <div class="form-group">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Usuario" class="form-control login-input" [(ngModel)]="usuario">
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña" class="form-control login-input" [(ngModel)]="contrasena">
+        </div>
+        <button type="button" (click)="iniciarSesion()" class="btn btn-primary login-button">Iniciar Sesión</button>
+    </form>
+
+    <div class="registration-buttons">
+        <button type="button" (click)="navigateToRegisterEstudiantes()" class="btn btn-secondary login-button">Registro Estudiantes</button>
+        <button type="button" (click)="navigateToRegisterProfesores()" class="btn btn-secondary login-button">Registro Profesores</button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="background">
+    <div class="plataforma-container">
+      <h1>Bienvenido a la Plataforma</h1>
+  
+      <form>
+        <div class="pestanas">
+          <button type="button" class="pestaña active" (click)="navigateToPerfilUsuario()">
+            <i class="fas fa-user"></i> Perfil de Usuario
+          </button>
+          <button type="button" class="pestaña" (click)="navigateToInscripcionCurso()">
+            <i class="fas fa-book-open"></i> Inscripción en Curso
+          </button>
+          <button type="button" class="pestaña" (click)="navigateToEvaluacionCurso()">
+            <i class="fas fa-star"></i> Evaluación de Curso
+          </button>
+          <button type="button" class="pestaña" (click)="navigateToCreacionContenido()">
+            <i class="fas fa-edit"></i> Creación de Contenido Educativo
+          </button>
+          <button type="button" class="pestaña" (click)="navigateToSoporteTecnico()">
+            <i class="fas fa-headset"></i> Soporte Técnico
+          </button>
+        </div>
+  
+        <!-- Agregar el botón para cerrar sesión -->
+        <button type="button" class="btn-cerrar-sesion" (click)="cerrarSesion()">Cerrar Sesión</button>
+      </form>
+    </div>
+  </div>
+  

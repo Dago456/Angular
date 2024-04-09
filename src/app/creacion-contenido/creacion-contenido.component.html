@@ -1,0 +1,27 @@
+<div class="creacion-contenido-container">
+    <h2>Creación de Contenido</h2>
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" placeholder="Título" class="form-control" [(ngModel)]="contenido.titulo" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" placeholder="Descripción" class="form-control" [(ngModel)]="contenido.descripcion" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" placeholder="Categoría" class="form-control" [(ngModel)]="contenido.categoria" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="fechaPublicacion">Fecha de Publicación:</label>
+        <input type="date" id="fechaPublicacion" class="form-control" [(ngModel)]="contenido.fechaPublicacion" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Crear Contenido</button>
+    </form>
+  </div>
+  
