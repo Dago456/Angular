@@ -16,7 +16,7 @@ export class InscripcionCursoComponent {
 
   inscribirse() {
     // Aquí iría la lógica para procesar la inscripción al curso
-
+//()
     // Después de inscribirse, redirecciona a la plataforma
     this.router.navigate(['/plataforma']); // Ajusta la ruta según corresponda
   }
