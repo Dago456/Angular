@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-creacion-contenido',
@@ -12,13 +13,16 @@ export class CreacionContenidoComponent {
     categoria: '',
     fechaPublicacion: ''
   };
+  
+  gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
+  navigateToRegisterEstudiantes(): void {       
+  }
+  constructor(private router: Router) { }
 
-  submitForm() {
-    console.log('Contenido creado:', this.contenido);
-    
-    // Aquí puedes agregar la lógica para enviar el formulario al servidor
-    
-    // Redireccionar a la plataforma después de enviar el formulario
-    window.location.href = '/plataforma'; // Reemplaza 'URL_DE_LA_PLATAFORMA' con la URL de tu plataforma
+  guardarCambios() {
+    // Aquí iría la lógica para guardar los cambios en el perfil de usuario
+
+    // Después de guardar los cambios, redirecciona a la plataforma
+    this.router.navigate(['/plataforma']); // Ajusta la ruta según corresponda
   }
 }

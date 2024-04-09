@@ -13,7 +13,12 @@ export class EvaluacionCursoComponent {
   calificacion: number = 0;
 
   constructor(private router: Router) {}
-
+ gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
+  navigateToRegisterEstudiantes(): void {
+    // Implementar la lógica para navegar al registro de estudiantes
+    console.log('Redirigiendo al registro de estudiantes...');
+    this.router.navigate(['/registro-estudiantes']);
+  }
   enviarEvaluacion() {
     // Aquí colocas la lógica para enviar la evaluación del curso
  

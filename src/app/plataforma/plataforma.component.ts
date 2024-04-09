@@ -6,7 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './plataforma.component.html',
   styleUrls: ['./plataforma.component.css']
 })
+
 export class PlataformaComponent {
+  gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
+
   constructor(private router: Router) {}
 
   navigateToPerfilUsuario(): void {
@@ -39,4 +42,5 @@ export class PlataformaComponent {
     // Redirigir al usuario a la página de inicio de sesión
     this.router.navigate(['/login']);
   }
+ 
 }
