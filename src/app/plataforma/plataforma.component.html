@@ -3,27 +3,28 @@
       <h1>Bienvenido a la Plataforma</h1>
   
       <form>
-        <div class="pestanas">
-          <button type="button" class="pestaña active" (click)="navigateToPerfilUsuario()">
+        <div class="registration-buttons">
+          <button type="button" class="btn btn-secondary login-button" (click)="navigateToPerfilUsuario()">
             <i class="fas fa-user"></i> Perfil de Usuario
           </button>
-          <button type="button" class="pestaña" (click)="navigateToInscripcionCurso()">
+          <button type="button" class="btn btn-secondary login-button" (click)="navigateToInscripcionCurso()">
             <i class="fas fa-book-open"></i> Inscripción en Curso
           </button>
-          <button type="button" class="pestaña" (click)="navigateToEvaluacionCurso()">
+          <button type="button" class="btn btn-secondary login-button" (click)="navigateToEvaluacionCurso()">
             <i class="fas fa-star"></i> Evaluación de Curso
           </button>
-          <button type="button" class="pestaña" (click)="navigateToCreacionContenido()">
+          <button type="button" class="btn btn-secondary login-button" (click)="navigateToCreacionContenido()">
             <i class="fas fa-edit"></i> Creación de Contenido Educativo
           </button>
-          <button type="button" class="pestaña" (click)="navigateToSoporteTecnico()">
+          <button type="button" class="btn btn-secondary login-button" (click)="navigateToSoporteTecnico()">
             <i class="fas fa-headset"></i> Soporte Técnico
           </button>
         </div>
   
         <!-- Agregar el botón para cerrar sesión -->
-        <button type="button" class="btn-cerrar-sesion" (click)="cerrarSesion()">Cerrar Sesión</button>
+        
       </form>
     </div>
+    <button type="button" class="btn btn-primary login-button" (click)="cerrarSesion()">Cerrar Sesión</button>
   </div>
   

@@ -1,27 +1,33 @@
-<div class="evaluacion-curso-container">
-    <h2>Evaluación de Curso</h2>
-    
-    <form>
-        <div class="form-group">
-            <label for="nombreCurso">Nombre del curso:</label>
-            <input type="text" id="nombreCurso" name="nombreCurso" class="form-control" [(ngModel)]="nombreCurso">
-        </div>
-        <div class="form-group">
-            <label for="nivel">Nivel del curso:</label>
-            <select id="nivel" name="nivel" class="form-control" [(ngModel)]="nivel">
-                <option value="Principiante">Principiante</option>
-                <option value="Intermedio">Intermedio</option>
-                <option value="Avanzado">Avanzado</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="comentario">Comentario:</label>
-            <textarea id="comentario" name="comentario" class="form-control" rows="4" [(ngModel)]="comentario"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="calificacion">Calificación:</label>
-            <input type="number" id="calificacion" name="calificacion" class="form-control" [(ngModel)]="calificacion" min="0" max="10">
-        </div>
-        <button (click)="enviarEvaluacion()" class="btn btn-primary">Enviar Evaluación</button>
-    </form>
+<div class="background">
+    <h1 class="login-title">Evaluación de Curso</h1>
+    <div class="login-container">
+        <form>
+            <div class="login-form">
+                <label for="username">Nombre del curso:</label>
+                <input type="text" id="username" name="username" class="form-control login-input"
+                    [(ngModel)]="nombreCurso">
+            </div>
+            <div class="login-form">
+                <label for="username">Nivel del curso:</label>
+                <select id="username" name="username" class="form-control login-input" [(ngModel)]="nivel">
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+            <div class="login-form">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" class="form-control" rows="4"
+                    [(ngModel)]="comentario"></textarea>
+            </div>
+            <div class="login-form">
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion" name="calificacion" class="form-control login-input"
+                    [(ngModel)]="calificacion" min="0" max="10">
+            </div>
+            <div class="registration-buttons">
+                <button (click)="enviarEvaluacion()" class="btn btn-secondary login-button">Enviar Evaluación</button>
+            </div>
+        </form>
+    </div>
 </div>

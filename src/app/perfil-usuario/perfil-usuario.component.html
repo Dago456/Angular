@@ -1,27 +1,32 @@
-<div class="perfil-usuario-container">
-    <h1>Perfil de Usuario</h1>
+<div class="background">
+ <div class="login-container">
+    <h1 class="login-title">Perfil de Usuario</h1>
     
-    <form>
+    <form class="login-form">
         <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" class="form-control" [(ngModel)]="nombre">
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username" class="form-control login-input" [(ngModel)]="nombre">
         </div>
         <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" class="form-control" [(ngModel)]="apellido">
+            <label for="username">Apellido:</label>
+            <input type="text" id="username" name="username" class="form-control login-input" [(ngModel)]="apellido">
         </div>
         <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email">
+            <label for="username">Correo electrónico:</label>
+            <input type="email" id="username" name="username" class="form-control login-input" [(ngModel)]="email">
         </div>
         <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" class="form-control" [(ngModel)]="telefono">
+            <label for="username">Teléfono:</label>
+            <input type="tel" id="username" name="username" class="form-control login-input" [(ngModel)]="telefono">
         </div>
         <div class="form-group">
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" class="form-control" [(ngModel)]="direccion">
+            <label for="username">Dirección:</label>
+            <input type="text" id="username" name="username" class="form-control login-input" [(ngModel)]="direccion">
         </div>
-        <button type="submit" class="btn btn-primary" (click)="guardarCambios()">Guardar Cambios</button>
-    </form>
+
+        <div class="registration-buttons">
+            <button type="submit" class="btn btn-secondary login-button" (click)="guardarCambios()">Guardar Cambios</button>
+        </div>
+      </form>
+</div>
 </div>

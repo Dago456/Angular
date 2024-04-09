@@ -1,27 +1,35 @@
-<div class="creacion-contenido-container">
-    <h2>Creación de Contenido</h2>
-    <form (ngSubmit)="submitForm()">
+<div class="background">
+  <div class="login-container">
+    <h1 class="login-title">Creación de Contenido</h1>
+    <form class="login-form">
       <div class="form-group">
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" placeholder="Título" class="form-control" [(ngModel)]="contenido.titulo" required>
+        <label for="username">Título:</label>
+        <input type="text" id="username" placeholder="Titulo" class="form-control login-input"
+          [(ngModel)]="contenido.titulo" required>
       </div>
-      
+
       <div class="form-group">
         <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" placeholder="Descripción" class="form-control" [(ngModel)]="contenido.descripcion" required></textarea>
+        <textarea id="descripcion" placeholder="Descripción" class="form-control login-input"
+          [(ngModel)]="contenido.descripcion" required></textarea>
       </div>
-      
+
       <div class="form-group">
         <label for="categoria">Categoría:</label>
-        <input type="text" id="categoria" placeholder="Categoría" class="form-control" [(ngModel)]="contenido.categoria" required>
+        <input type="text" id="categoria" placeholder="Categoría" class="form-control login-input"
+          [(ngModel)]="contenido.categoria" required>
       </div>
-      
+
       <div class="form-group">
         <label for="fechaPublicacion">Fecha de Publicación:</label>
-        <input type="date" id="fechaPublicacion" class="form-control" [(ngModel)]="contenido.fechaPublicacion" required>
+        <input type="date" id="fechaPublicacion" class="form-control login-input"
+          [(ngModel)]="contenido.fechaPublicacion" required>
       </div>
       
-      <button type="submit" class="btn btn-primary">Crear Contenido</button>
     </form>
+    <div class="registration-buttons">
+      <button type="submit" class="btn btn-secondary login-button">Crear Contenido</button>
+    </div>
   </div>
   
+</div>
