@@ -1,6 +1,7 @@
 <div class="background">
-    <h1 class="login-title">Evaluación de Curso</h1>
-    <div class="login-container">
+    <div *ngFor="let item of gridItems" class="grid-item"></div>
+ <div class="login-container">
+    <h1 class="login-title">Perfil de Usuario</h1>
         <form>
             <div class="login-form">
                 <label for="username">Nombre del curso:</label>

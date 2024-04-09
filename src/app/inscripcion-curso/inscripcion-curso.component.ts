@@ -12,6 +12,9 @@ export class InscripcionCursoComponent {
   fechaInicio: string = '';
   duracion: number = 0;
 
+  gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
+  navigateToRegisterEstudiantes(): void {       
+  }
   constructor(private router: Router) { }
 
   inscribirse() {

@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
 
 export class PlataformaComponent {
   gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
-
-  constructor(private router: Router) {}
+  navigateToRegisterEstudiantes(): void {       
+  }
+  constructor(private router: Router) { }
 
   navigateToPerfilUsuario(): void {
     this.router.navigate(['/perfil-usuario']);
@@ -33,14 +34,10 @@ export class PlataformaComponent {
   }
 
   cerrarSesion(): void {
-    // Aquí agregamos la lógica para cerrar la sesión del usuario
-    // Por ejemplo, podríamos limpiar el almacenamiento local y redirigir al usuario a la página de inicio de sesión
-
-    // Limpiar almacenamiento local
+   
     localStorage.clear();
-
-    // Redirigir al usuario a la página de inicio de sesión
+    
     this.router.navigate(['/login']);
   }
- 
+
 }

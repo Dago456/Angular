@@ -136,10 +136,18 @@
 /* Estilos para los botones de registro */
 .registration-buttons {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
+.registration-buttons .btn {
+  width: 200px; /* Ancho fijo para los botones */
+}
+
+.plataforma-container {
+  text-align: center;
+}
 .btn-secondary {
   background-color: #140d9f;
   color: #fff;

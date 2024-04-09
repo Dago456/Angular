@@ -19,10 +19,8 @@ export class CreacionContenidoComponent {
   }
   constructor(private router: Router) { }
 
-  guardarCambios() {
-    // Aquí iría la lógica para guardar los cambios en el perfil de usuario
-
-    // Después de guardar los cambios, redirecciona a la plataforma
-    this.router.navigate(['/plataforma']); // Ajusta la ruta según corresponda
+  regresarALaPlataforma() {
+    // Aquí redirigimos al usuario a la página de la plataforma
+    this.router.navigate(['/plataforma']);
   }
 }

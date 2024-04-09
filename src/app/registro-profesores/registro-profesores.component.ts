@@ -17,8 +17,8 @@ export class RegistroProfesoresComponent implements OnInit {
     this.gridItems = Array.from({ length: 144 }, (_, i) => i + 1);
   }
 
-  crearcontenido() {
-    // Después de inscribirse, redirecciona a la plataforma
-    this.router.navigate(['/login']); // Ajusta la ruta según corresponda
+  regresarALogin() {
+    // Aquí redirigimos al usuario al login
+    this.router.navigate(['/login']);
   }
 }

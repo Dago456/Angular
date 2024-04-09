@@ -10,6 +10,7 @@ import { EvaluacionCursoComponent } from './evaluacion-curso/evaluacion-curso.co
 import { CreacionContenidoComponent } from './creacion-contenido/creacion-contenido.component';
 import { SoporteTecnicoComponent } from './soporte-tecnico/soporte-tecnico.component';
 import { LoginComponent } from './login/login.component';
+import { PlataformaComponent } from './plataforma/plataforma.component';
 import { RegistroEstudiantesComponent } from './registro-estudiantes/registro-estudiantes.component'; // Asegúrate de importar RegistroEstudiantesComponent si está en AppModule
 import { RegistroProfesoresComponent } from './registro-profesores/registro-profesores.component'; // Asegúrate de importar RegistroProfesoresComponent si está en AppModule
 
@@ -23,7 +24,8 @@ import { RegistroProfesoresComponent } from './registro-profesores/registro-prof
     SoporteTecnicoComponent,
     LoginComponent,
     RegistroEstudiantesComponent, 
-    RegistroProfesoresComponent
+    RegistroProfesoresComponent,
+    PlataformaComponent
   ],
   imports: [
     BrowserModule,

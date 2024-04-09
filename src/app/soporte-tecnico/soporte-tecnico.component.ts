@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./soporte-tecnico.component.css']
 })
 export class SoporteTecnicoComponent {
+  gridItems: number[] = Array.from({length: 144}, (_, i) => i + 1);
+  navigateToRegisterEstudiantes(): void {       
+  }
   constructor(private router: Router) { }
 
   enviarSoporte() {

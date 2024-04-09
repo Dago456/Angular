@@ -73,25 +73,29 @@
   
   /* Estilos para el título del formulario */
   .registro-container h1 {
-    color: #fff;
-    margin-bottom: 30px;
-    font-size: 24px;
+    color: #fff; /* Color del texto blanco */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 40px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
   }
   
-  /* Estilos para los campos de entrada */
-  .form-group {
-    margin-bottom: 20px;
-    color: #fff;
+  .form-group input {
+    margin-bottom: 5px;
+    color: #080808;
   }
-  
+  .form-group  {
+    margin-bottom: 5px;
+    color: #fcf9f9;
+  }
   .form-control {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 6px;
-    background: #c2bfbf;
-    color: #fff;
-    font-size: 16px;
+    background: #cacaca;
+    color: #fffefe;
+    font-size: 16px;    
   }
   
   /* Estilos para el botón de registro */

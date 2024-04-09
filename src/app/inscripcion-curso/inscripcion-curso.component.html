@@ -1,8 +1,7 @@
 <div class="background">
-
-    <div class="login-container">
-
-        <h1 class="login-title">Inscripción en Curso</h1>
+    <div *ngFor="let item of gridItems" class="grid-item"></div>
+ <div class="login-container">  
+        <h1 class="login-title">Inscripción al Curso</h1>
         <form class="login-form">
             <div class="form-group">
                 <label for="username">Nombre del Curso:</label>
